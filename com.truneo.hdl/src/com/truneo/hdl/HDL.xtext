@@ -1,0 +1,42 @@
+//grammar com.truneo.hdl.HDL with org.eclipse.xtext.common.Terminals
+//
+//generate hDL "http://www.truneo.com/hdl/HDL"
+//
+//Model:
+//	greetings+=Greeting*;
+//	
+//Greeting:
+//	'Hello' name=ID '!';
+
+	
+grammar com.truneo.hdl.HDL with
+                                      org.eclipse.xtext.xbase.Xbase
+ 
+generate hDL "http://www.truneo.com/hdl/HDL"
+ 
+Domainmodel:
+  importSection=XImportSection?
+  (elements += AbstractElement)*
+;
+ 
+PackageDeclaration:
+  'package' name = QualifiedName '{'
+    (elements += AbstractElement)*
+  '}'
+;
+ 
+AbstractElement:
+  PackageDeclaration | Entity
+;
+ 
+Entity:
+  'entity' name = ID 
+              ('extends' superType = JvmTypeReference)?
+  '{'
+    (features += Feature)*
+  '}'
+;
+ 
+Feature:
+  name = ID ':' type = JvmTypeReference (desc=STRING)?
+; 
