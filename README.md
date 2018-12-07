@@ -59,4 +59,4 @@ public class TestUserDO {
     
 }
 ```
-3. If you want to modify the generated java file, please delete the hdl file. Otherwise, your changes will be overwrite
+3. If you want to modify the generated java file, please delete the hdl file. Otherwise, your changes will be overwritten
