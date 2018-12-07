@@ -46,7 +46,7 @@ class EntityCompiler {
     @Entity
     @NoArgsConstructor
     @AllArgsConstructor
-    @Table(name = "«GeneratorUtils.dbName(name)»", schema = "qqmall", catalog = "")
+    @Table(name = "«GeneratorUtils.dbName(name)»", schema = "", catalog = "")
     @Valid
     @ApiModel("«name»DO")
     public class «name»DO «IF superType != null»
