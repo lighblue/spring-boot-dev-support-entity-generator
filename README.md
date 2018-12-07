@@ -18,7 +18,7 @@ copy plugins/*.jar to Eclipse's plugins folder and restart Eclipse
 </code></pre>
 
 2. save the file, TestUserDO.java will be generated in /src-gen/com/truneo/test/model/entity
-```
+```java
 package com.truneo.test.model.entity;
 
 import lombok.Builder;
