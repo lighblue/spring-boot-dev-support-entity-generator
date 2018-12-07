@@ -37,7 +37,7 @@ import com.truneo.test.enums.TestUserStatusEnum;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "test_user", schema = "qqmall", catalog = "")
+@Table(name = "test_user", schema = "", catalog = "")
 @Valid
 @ApiModel("TestUserDO")
 public class TestUserDO {
