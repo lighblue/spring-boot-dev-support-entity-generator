@@ -18,7 +18,7 @@ copy plugins/*.jar to Eclipse's plugins folder and restart Eclipse
 </code></pre>
 
 2. save the file, TestUserDO.java will be generated in /src-gen/com/truneo/test/model/entity
-<pre><code>
+```
 package com.truneo.test.model.entity;
 
 import lombok.Builder;
@@ -58,5 +58,5 @@ public class TestUserDO {
     private TestUserStatusEnum status;
     
 }
-</code></pre>
+```
 3. If you want to modify the generated java file, please delete the hdl file. Otherwise, your changes will be overwrite
