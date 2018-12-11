@@ -60,3 +60,5 @@ public class TestUserDO {
 }
 ```
 3. If you want to modify the generated java file, please delete the hdl file. Otherwise, your changes will be overwritten
+
+![Image text](https://github.com/lighblue/spring-boot-dev-support-entity-generator/blob/master/eclipse%20config.png?raw=true)
